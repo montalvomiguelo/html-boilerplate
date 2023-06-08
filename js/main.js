@@ -1,3 +1,3 @@
-import { counter, incCounter } from './lib.js'
+import { counter, incCounter } from 'lib'
 incCounter()
 console.log(counter)
