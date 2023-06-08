@@ -16,7 +16,16 @@
   <script type="importmap">
     {
       "imports": {
-        "lib": "./js/lib.js"
+        "lib": "./js/lib.js",
+        "lit": "https://ga.jspm.io/npm:lit@2.7.5/index.js"
+      },
+      "scopes": {
+        "https://ga.jspm.io/": {
+          "@lit/reactive-element": "https://ga.jspm.io/npm:@lit/reactive-element@1.6.2/development/reactive-element.js",
+          "lit-element/lit-element.js": "https://ga.jspm.io/npm:lit-element@3.3.2/development/lit-element.js",
+          "lit-html": "https://ga.jspm.io/npm:lit-html@2.7.4/development/lit-html.js",
+          "lit-html/is-server.js": "https://ga.jspm.io/npm:lit-html@2.7.4/development/is-server.js"
+        }
       }
     }
   </script>
@@ -25,6 +34,6 @@
 </head>
 <body>
   <!-- Add your site or application content here -->
-  <p>Hello world!</p>
+  <my-counter></my-counter>
 </body>
 </html>
